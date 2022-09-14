@@ -1,8 +1,8 @@
 import express from 'express';
-import { getCardsRouter } from './routes/get';
+import { getUsersRouter } from './routes/get-users';
 
 const app = express();
 
-app.use(getCardsRouter);
+app.use(getUsersRouter);
 
 export { app };
