@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { TextBox } from '../../components/TextBox';
 
 export const ErrorMessage = styled.div`
   color: #ba495a;
@@ -44,6 +45,11 @@ export const GridRowItem = styled.div``;
 
 export const PageTitle = styled.h1`
   margin: 16px;
+`;
+
+export const SearchTextBox = styled(TextBox)`
+  flex: 1;
+  margin: 0 16px 16px;
 `;
 
 export const Spinner = styled.div`

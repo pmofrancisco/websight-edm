@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
+import { TextBox } from '../../components/TextBox';
 import {
   Container,
   Form,
@@ -7,7 +8,6 @@ import {
   Header,
   Label,
   SignInButton,
-  TextBox,
 } from './Home.styled';
 
 const Home = () => {

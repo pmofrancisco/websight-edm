@@ -1,5 +1,5 @@
-import { selector } from 'recoil';
 import axios from 'axios';
+import { selector } from 'recoil';
 
 export interface IUser {
   id: number;
@@ -9,11 +9,12 @@ export interface IUser {
 }
 
 export const usersState = selector<IUser[]>({
-  key: 'usersState',
+  key: 'users',
   get: async () => {
     try {
       const response = await axios.get<IUser[]>('/api/users');
-      return response.data;
+      const { data } = response;
+      return data;
     } catch {
       throw new Error();
     }
