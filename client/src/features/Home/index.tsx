@@ -20,12 +20,12 @@ const Home = () => {
         setIsSignedIn(true);
       }}>
         <FormControl>
-          <Label>Username</Label>
-          <TextBox />
+          <Label htmlFor="username">Username</Label>
+          <TextBox id="username" name="username" />
         </FormControl>
         <FormControl>
-          <Label>Password</Label>
-          <TextBox type="password" />
+          <Label htmlFor="password">Password</Label>
+          <TextBox type="password" id="password" name="password" />
         </FormControl>
         <SignInButton>Sign In</SignInButton>
       </Form>
